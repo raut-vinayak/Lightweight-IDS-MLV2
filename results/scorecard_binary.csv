@@ -1,0 +1,17 @@
+task,k,model,accuracy,precision_macro,recall_macro,macro_f1,weighted_f1,model_size_kb,latency_ms,train_time_sec
+binary,5,LogisticRegression,0.9975,0.9979,0.9967,0.9973,0.9975,1.98,0.0116,0.021
+binary,5,ConstrainedLightGBM,0.9969,0.9972,0.996,0.9966,0.9969,70.12,0.0274,0.077
+binary,5,SmallRandomForest,0.9969,0.9972,0.996,0.9966,0.9969,76.2,0.5198,0.085
+binary,5,DecisionTree,0.9956,0.996,0.9944,0.9952,0.9956,5.03,0.0123,0.027
+binary,10,LogisticRegression,0.9981,0.9983,0.9976,0.998,0.9981,2.33,0.0112,0.012
+binary,10,SmallRandomForest,0.9981,0.9986,0.9974,0.9979,0.9981,71.63,0.4743,0.062
+binary,10,ConstrainedLightGBM,0.9972,0.9972,0.9966,0.9969,0.9972,70.43,0.0293,0.057
+binary,10,DecisionTree,0.9969,0.9972,0.996,0.9966,0.9969,5.14,0.0129,0.038
+binary,15,LogisticRegression,0.9994,0.9995,0.9991,0.9993,0.9994,2.63,0.0163,0.015
+binary,15,SmallRandomForest,0.9991,0.9993,0.9987,0.999,0.9991,83.78,0.4741,0.087
+binary,15,ConstrainedLightGBM,0.9972,0.9972,0.9966,0.9969,0.9972,70.96,0.0306,0.05
+binary,15,DecisionTree,0.9966,0.9967,0.9957,0.9962,0.9966,5.42,0.0143,0.051
+binary,20,LogisticRegression,0.9994,0.9995,0.9991,0.9993,0.9994,2.94,0.0127,0.014
+binary,20,SmallRandomForest,0.9991,0.9993,0.9987,0.999,0.9991,85.26,0.5027,0.069
+binary,20,ConstrainedLightGBM,0.9972,0.9972,0.9966,0.9969,0.9972,71.08,0.0292,0.037
+binary,20,DecisionTree,0.9966,0.9967,0.9957,0.9962,0.9966,5.51,0.0141,0.054

@@ -1,0 +1,38 @@
+[
+  {
+    "Time": "2026-10-05 01:58:00.000",
+    "Packet ID": "PKT-1791145669058",
+    "Origin IP": "10.0.4.30",
+    "Target Node": "Central Nursing Station Console (10.0.4.5)",
+    "Traffic Type": "Routine Telemetry Heartbeat",
+    "Intensity": "BENIGN (SAFE)",
+    "Verdict": "BENIGN \u2705",
+    "Stealth Evasion": "No",
+    "Latency": "3.6603 ms",
+    "Edge Action": "Forwarded"
+  },
+  {
+    "Time": "2026-10-05 01:57:00.000",
+    "Packet ID": "PKT-1791145624772",
+    "Origin IP": "198.51.100.99",
+    "Target Node": "Automated Smart Infusion Pump (10.0.4.18)",
+    "Traffic Type": "Credential Brute-Force",
+    "Intensity": "MEDIUM THREAT",
+    "Verdict": "ATTACK \ud83d\udea8",
+    "Stealth Evasion": "No",
+    "Latency": "3.1128 ms",
+    "Edge Action": "iptables DROP"
+  },
+  {
+    "Time": "2026-10-05 01:55:00.000",
+    "Packet ID": "PKT-1791145525531",
+    "Origin IP": "198.51.100.77",
+    "Target Node": "ICU Patient Vitals & ECG Monitor (10.0.4.12)",
+    "Traffic Type": "DDoS SYN Flood Blast \ud83c\udfad [STEALTH EVASION]",
+    "Intensity": "HEAVY (CRITICAL)",
+    "Verdict": "ATTACK \ud83d\udea8",
+    "Stealth Evasion": "Yes \u26a0\ufe0f",
+    "Latency": "238.3370 ms",
+    "Edge Action": "iptables DROP"
+  }
+]
