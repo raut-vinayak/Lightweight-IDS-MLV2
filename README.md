@@ -156,6 +156,17 @@ streamlit run dashboard.py --server.port 8501
 
 > **💡 Best Demo Experience:** Open both URLs side-by-side in your browser (Split Screen). Launch an attack on the left (Port 8502) and watch the Defender SOC on the right (Port 8501) intercept and block it instantly!
 
+### Deploy the Combined Demo on Streamlit Community Cloud
+
+The two portals can also run as pages in one Streamlit process, which keeps the JSON traffic bridge shared:
+
+1. Push this repository to GitHub.
+2. In [Streamlit Community Cloud](https://share.streamlit.io/), create an app from this repository and select `dashboard.py` as the main file.
+3. Select Python 3.14 and deploy. The pinned dependencies in `requirements.txt` match the model runtime used for this project.
+4. Open **Attacker Studio** from the app's sidebar to send simulated traffic to the Defender dashboard.
+
+Community Cloud storage is ephemeral, so audit history and bridge data may be cleared when the app restarts. This hosted demo does not have access to a VM's network interface for packet capture or firewall enforcement; those lab-only features still require running the IDS on the VM network described below.
+
 ---
 
 ## 🌐 Running Live Detection in a VM Lab (Phase 7)
